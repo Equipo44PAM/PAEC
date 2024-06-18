@@ -1,0 +1,83 @@
+:root {
+    --bgform: #9d2449;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8e7;
+}
+
+.form-structure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 8vh;
+    z-index: 5;
+}
+
+.form-estudiantes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 570px;
+    width: 100%;
+    height: 680px;
+    padding: 30px;
+    margin: 0 15px 0 15px;
+    background-color: var(--bgform);
+    box-shadow: -1px 3px 15px 0px rgba(0,0,0,0.75);
+}
+
+.img-cetis {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.form-estudiantes input {
+    margin-top: 15px;
+    width: 55%;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    text-align: center;
+}
+
+.form-estudiantes select {
+    margin-top: 15px;
+    width: 55%;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    text-align: center;
+}
+
+.buttons {
+    background-color: #C3C3C3;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: #6E6E6E;
+    cursor: pointer;
+}
+
+.text-info {
+    position: relative;
+    top: 40px;
+}
+
+.title-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el gráfico */
+.graphic {
+    margin-top: 120px;
+    width: 400px; /* Ancho del gráfico */
+    height: 300px;
+    position: relative;
+    z-index: 10; /* Asegura que el gráfico esté sobre el formulario */
+}
+

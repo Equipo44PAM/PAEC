@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2em;
+    color: #2c3e50;
+}
+
+.consult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.consult form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.consult label {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #34495e;
+}
+
+.consult input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.consult input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.consult input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 100%;
+}
+
+.results h2 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.results p {
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+.results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.results table, .results th, .results td {
+    border: 1px solid #dddddd;
+}
+
+.results th, .results td {
+    padding: 10px;
+    text-align: left;
+}
+
+.results th {
+    background-color: #f2f2f2;
+}
+
+.results tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

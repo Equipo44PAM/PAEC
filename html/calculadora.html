@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/calculadora.js"></script>
+    <link rel="stylesheet" href="../css/calc.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Registros</a>
+                <ul class="menu-after">
+                    <li><a href="../php/familiar/registro.php">Familiar</a></li>
+                    <li><a href="../php/imc/registro.php">IMC</a></li>
+                    <li><a href="../php/alumnos/registro.php">Alumno</a></li>
+                    <li><a href="../php/trabajador/registro.php">Trabajador</a></li>
+                    <li><a href="../php/personas/registro.php">Persona</a></li>
+                </ul>
+            </li>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+        </ul>
+    </nav>
+
+    <div class="title">
+        <h1>Calculadora de IMC</h1>
+    </div>
+
+    <div class="calc-imc">
+        <form name="form-imc" class="form-imc">
+            <p> Estatura:</p> <br> 
+            <input type="text" name="estatura" id="estatura" placeholder="Estatura en M" class="fill-form">
+            <p> Peso: </p><br> 
+            <input type="text" name="peso" id="peso" placeholder="Peso en kg" class="fill-form"> 
+            <input type="text" name="res-imc" id="res-imc" readonly class="fill-form">
+            <input type="button" onclick="calcular();" value="Calcular" class="btn-send">
+            <div id="imc-message" class="alert-text"></div>
+        </form>
+    </div>
+</body>
+</html>
